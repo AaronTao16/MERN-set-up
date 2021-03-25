@@ -1,0 +1,17 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "concurrently \" cd server && npm install\" \" cd client && npm install\" ",
+    "server -install": "cd server && npm install",
+    "client -install": "cd client && npm install",
+    "dev": "concurrently \" cd server && npm run server\" \" cd client && npm run client\""
+  },
+  "author": "Yi Tao",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
